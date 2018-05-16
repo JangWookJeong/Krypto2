@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "975990829835",
+    "firebase_url": "https://krypto-39b18.firebaseio.com",
+    "project_id": "krypto-39b18",
+    "storage_bucket": "krypto-39b18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975990829835:android:216e2beab95ab7a0",
+        "android_client_info": {
+          "package_name": "com.codename.krypto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975990829835-38b7j3l48f60e5iogov3u15objgb0d5i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codename.krypto",
+            "certificate_hash": "21ee795c9f72a8c446886e0b8498e063b00aae45"
+          }
+        },
+        {
+          "client_id": "975990829835-ia9ci94n5t8melir3i5g1e1bgj43ef4k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7dL-zakc4KwJD05uNFBxDXOaKAF0KYFo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975990829835-ia9ci94n5t8melir3i5g1e1bgj43ef4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/layout_item_color"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/layout_item_color"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/Home_Group_Item_TopImage"
+                android:layout_width="160dp"
+                android:layout_height="195dp"
+                android:src="@drawable/sajin"
+                android:background="@drawable/layout_rounded"
+                android:scaleType="fitXY"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Home_Move_Group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_item_color"
+            android:orientation="vertical"
+           >
+            <TextView
+                android:id="@+id/Home_Group_Item_GroupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textColor="#ffffff"
+                android:maxLength="10"
+                android:text="장욱정팬카페입니다옄"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/Home_Group_Item_GroupContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="횡성고등학교에서 지낸 우리들의 멋진 모습들"
+                android:textColor="#ffffff"
+                android:layout_marginTop="10dp"
+                android:maxLength="25"
+                android:textSize="12dp"
+                android:layout_marginLeft="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RatingBar
+                    android:layout_width="18dp"
+                    android:layout_height="16dp"
+                    android:rating="1"
+                    android:numStars="1"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="18dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8.1"
+                    android:textSize="20dp"
+                    android:textColor="#ffff"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/10"
+                    android:textColor="#c6c4c4"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8 Members"
+                android:textSize="10dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="20dp"/>
+            <Button
+                android:id="@+id/Home_Group_Joining"
+                android:text="가 입"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

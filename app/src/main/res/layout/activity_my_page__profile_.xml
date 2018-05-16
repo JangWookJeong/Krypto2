@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPage_Profile_Activity"
+    android:background="#c2c2c2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/MyPage_ProfileSetting_TopLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dfdfdf"
+
+            >
+
+            <ImageButton
+                android:id="@+id/MyPage_ProfileSetting_TopLayout_BackSpace"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:background="#dfdfdf"
+                android:onClick="Backspace"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+            <TextView
+                android:id="@+id/MyPage_ProfileSetting_BackSpaceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:onClick="Backspace"
+                android:text="뒤로가기"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MyPage_ProfileSetting_TopLayout"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/MyPage_Top_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="#e4e4e4">
+
+                <ImageView
+                    android:id="@+id/MyPage_Mybackground_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:scaleType="fitXY"
+                   />
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/MyPage_Profile_AddMyimage"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="55dp"
+                    app:civ_border_color="#7c7c7b"
+                    app:civ_border_width="2dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/MyPage_Mybackground_Image"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="239dp"
+                    android:layout_marginTop="1dp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/MyPage_Profile_MyImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00ffffff"
+                        android:src="@drawable/ic_add_a_photo_black_24dp"
+
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/Mypage_profile_initNickName_Checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#c2c2c2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="닉 네 임  :"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+
+                    android:layout_marginTop="3dp"/>
+
+                <EditText
+                    android:id="@+id/Mypage_Profile_NickName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#f2f2f2"
+                    android:hint="예)닉네임"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="3dp"/>
+                <Button
+                    android:id="@+id/Mypage_Profile_CheckedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="중복체크"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="#c2c2c2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이       름 :"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/Mypage_Profile_UserName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#f2f2f2"
+                    android:inputType="text"
+                    android:hint="예)홍길동"
+                    android:layout_marginLeft="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="성       별 :"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginTop="2dp"/>
+
+                <RadioGroup
+                    android:id="@+id/Mypage_Profile_RadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton
+                        android:id="@+id/Myapge_Profile_Radio_Man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="남자"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="10dp"
+
+                        />
+                    <RadioButton
+                        android:id="@+id/Myapge_Profile_Radio_Woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여자"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginBottom="7dp"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="생년월일 :"
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/Mypage_Profile_BirthNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#f2f2f2"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:hint="예) 891217"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="* 배경 이미지 설정은 배경이미지를 터치후 변경하세요!"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/MyPage_Profile_OkButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="프로필 등록"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#c2c2c2">
+    <!--탭구성을위한 Top 레이아웃-->
+
+    <RelativeLayout
+        android:id="@+id/Main_Linear_First"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#f1efef"
+        android:layout_above="@+id/Main_Bottom_Layout">
+        <!--메인화면의 탭설정-->
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/Main_Tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="1dp"
+                android:background="#e4e4e4"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabTextColor="@android:color/black"
+                app:tabSelectedTextColor="@color/colorPrimary"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/main_Fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+            </LinearLayout>
+
+            <!--탭에 연결시킬 뷰페이저-->
+            <android.support.v4.view.ViewPager
+                android:id="@+id/Main_ViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/Main_Linear_Four"
+                />
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+
+        <include
+            android:id="@+id/Main_Bottom_Layout"
+            layout="@layout/activity_main__bottom__icons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+
+    <!--Bottom 메뉴버튼 레이아웃-->
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:background="#e4e3e3"
+    android:layout_marginRight="8dp"
+    android:id="@+id/Home_Group_layout"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/MyHome_Group_Item_TopImage"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:src="@drawable/sajin"
+                android:scaleType="fitXY"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MyHome_Move_Group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/MyHome_Group_Item_GroupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:text="장욱정팬카페"
+                android:textSize="14dp"
+                android:maxLength="8"
+                />
+            <TextView
+                android:id="@+id/MyHome_Group_Item_GroupContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="컨텐츠내용 ㅋ"
+                android:textColor="#000000"
+                android:textSize="9dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="3dp"
+                android:maxLength="15"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/MyHome_Group_Item_BottomImage1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:src="@drawable/sajin"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+
+                />
+            <ImageView
+                android:id="@+id/MyHome_Group_Item_BottomImage2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:src="@drawable/sajin"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+
+                />
+            <ImageView
+                android:id="@+id/MyHome_Group_Item_BottomImage3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/bin1"
+                android:scaleType="fitXY"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

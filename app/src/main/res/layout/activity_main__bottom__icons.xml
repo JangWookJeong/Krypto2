@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/Main_Linear_Four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageButton
+            android:id="@+id/Main_Bottom_Home_Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/outline_home_black_18dp"
+            android:background="#323239"/>
+        <ImageButton
+            android:id="@+id/Main_Bottom_List_Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_list_black_24dp"
+            android:background="#323239"/>
+        <ImageButton
+            android:id="@+id/Main_Bottom_Graph_Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_equalizer_black_24dp"
+            android:background="#323239"/>
+        <ImageButton
+            android:id="@+id/Main_Bottom_MyPage_Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/outline_person_outline_black_18dp"
+            android:background="#323239"/>
+    </LinearLayout>
+
+</RelativeLayout>

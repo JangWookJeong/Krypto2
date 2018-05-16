@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPage_Setting_Activity"
+    android:background="#c2c2c2"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="   Setting"
+                    android:textSize="25dp"
+                    android:background="#e4e4e4"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Mypage_Three_Message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Mypage_Three_Layout"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="프로필설정　　　　　　　　　　　　　　　　　　　>"
+                    android:background="#e4e4e4"
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="개인정보보호　　　　　　　　　　　　　　　　　　>"
+                    android:background="#e4e4e4"
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="알   림　　　　　　　　　　　　　　　　　　　　　>"
+                    android:background="#e4e4e4"
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="알   림　　　　　　　　　　　　　　　　　　　　　>"
+
+                    android:background="#e4e4e4"
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text="알   림　　　　　　　　　　　　　　　　　　　　　>"
+                    android:background="#e4e4e4"
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="알   림　　　　　　　　　 　　　　　　　　　　　　>"
+                    android:background="#e4e4e4"
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="알   림　　　　　　　　　 　　　　　　　　　　　　>"
+                    android:background="#e4e4e4"
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"
+                    />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text="도움말　　　　　　　　　　　　　　　　　　　　　>"
+                    android:background="#e4e4e4"
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"
+                    />
+
+
+                <Button
+                    android:id="@+id/Mypage_setting_Logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="로그아웃 　                                                                         >"
+                    android:background="#e4e4e4"
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/Mypage_Setting_MemberLeave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="회원탈퇴 　　                                                                     >"
+                    android:background="#e4e4e4"
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"/>
+                <Button
+                    android:id="@+id/Mypage_Setting_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="나가기"
+                    android:background="#e4e4e4"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

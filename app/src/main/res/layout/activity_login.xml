@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#413ba3">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Krypto"
+        android:textSize="50dp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/LoginActivity_Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="testsample@test.com"
+            android:textColorHint="#605f5f"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="#ffffff"
+            android:inputType="textEmailAddress"
+            android:textSize="23dp"/>
+        <EditText
+            android:id="@+id/LoginActivity_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="#605f5f"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="#ffffff"
+            android:textSize="23dp"/>
+
+        <Button
+            android:id="@+id/LoginActivity_Login_Try"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="로그인"
+            android:background="#ffffff"/>
+        
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/Google_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="14dp"
+           />
+
+
+    </LinearLayout>
+
+</LinearLayout>

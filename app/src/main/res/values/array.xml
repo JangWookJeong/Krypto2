@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="InputType">
+        <item >입금</item>
+        <item >출금</item>
+    </string-array>
+</resources>

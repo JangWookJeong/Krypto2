@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPageActivity"
+    android:background="#ffffff">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_item_color">
+            <RelativeLayout
+                android:id="@+id/MyPage_Top_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_item_color"
+                android:layout_marginBottom="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/MyPage_Mybackground_Imagehave"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:scaleType="fitXY"
+
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/MyPage_Profile_imageHave"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="55dp"
+                    app:civ_border_color="#7c7c7b"
+                    app:civ_border_width="2dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/MyPage_Mybackground_Imagehave"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="15dp">
+                    <Button
+                        android:id="@+id/MyPage_Top_Profile_Setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="프로필설정"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/MyPage_Top_Myname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/MyPage_Profile_imageHave"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/Mypage_Second_Layout"
+                android:layout_below="@+id/MyPage_Top_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/layout_item_color"
+                android:layout_marginTop="1dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="나의정보"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Mypage_Three_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/Mypage_Second_Layout"
+                android:layout_marginTop="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/layout_item_color">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/layout_item_color"
+                    >
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="입금내역"
+                        android:textColor="#ffffff"
+                        android:drawableTop="@drawable/ic_reorder_black_24dp"
+                        android:background="@drawable/layout_item_color"
+
+
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="출금내역"
+                        android:textColor="#ffffff"
+                        android:drawableTop="@drawable/ic_reorder_black_24dp"
+                        android:background="@drawable/layout_item_color"
+
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="업로드"
+                        android:textColor="#ffffff"
+                        android:drawableTop="@drawable/ic_backup_black_24dp"
+                        android:background="@drawable/layout_item_color"
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="다운로드"
+                        android:textColor="#ffffff"
+                        android:drawableTop="@drawable/ic_file_download_black_24dp"
+                        android:background="@drawable/layout_item_color"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Mypage_Three_Layout"
+                    android:background="@drawable/layout_item_color"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="사진"
+                        android:drawableTop="@drawable/ic_add_a_photo_black_24dp"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/layout_item_color"
+                        />
+                    <Button
+                        android:id="@+id/Create_Group_Make"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="그룹만들기"
+                        android:textColor="#ffffff"
+                        android:drawableTop="@drawable/ic_public_black_24dp"
+                        android:background="@drawable/layout_item_color"
+                        />
+                    <Button
+                        android:id="@+id/Mypage_CrateContent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="작성"
+                        android:textColor="#ffffff"
+                        android:drawableTop="@drawable/ic_create_black_24dp"
+                        android:background="@drawable/layout_item_color"
+                        />
+                    <Button
+                        android:id="@+id/Mypage_Settings"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="설정"
+                        android:textColor="#ffffff"
+                        android:drawableTop="@drawable/ic_settings_black_24dp"
+                        android:background="@drawable/layout_item_color"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/Mypage_Three_Message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Mypage_Three_Layout"
+                android:orientation="vertical"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="#ffffff">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text="공   지                                                                            >"
+                    android:background="@drawable/layout_item_color"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="1dp"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text="멤   버                                                                            >"
+                    android:background="@drawable/layout_item_color"
+                    android:layout_marginTop="1dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:text="알   람                                                                            >"
+                    android:background="@drawable/layout_item_color"
+                    android:layout_marginTop="1dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/Mypage_Three_Message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sajin"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/Mypage_include_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_main__bottom__icons"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c2c2c2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dfdfdf"
+        >
+
+        <ImageButton
+            android:id="@+id/Input_Top_Backspace"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"
+            android:background="#dfdfdf"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:text="뒤로가기"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:background="#e4e4e4"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="입출금선택 :"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <Spinner
+                android:id="@+id/Input_Spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#e4e4e4"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:background="#e4e4e4">
+            <TextView
+                android:id="@+id/Input_Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="     입금자명 :"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2"
+                android:background="#e4e4e4"
+                android:hint="이름을 입력하세요." />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:background="#e4e4e4">
+            <TextView
+                android:id="@+id/Input_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="         입금액 :"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#e4e4e4"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+                android:hint="금액을 입력해주세요."/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:background="#e4e4e4">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="            날 짜 :"
+                android:gravity="center"
+                android:layout_weight="1"/>
+            <EditText
+                android:id="@+id/Input_Date_Text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#e4e4e4"
+                android:layout_marginRight="5dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:paddingLeft="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내    용"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="8dp"
+                />
+
+            <EditText
+                android:id="@+id/Input_Content_Text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:autoSizeMaxTextSize="500dp"
+                android:background="#e4e4e4"
+                android:ellipsize="start"
+                android:hint="특이사항 내용을 넣어주세요."
+                android:singleLine="false" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp">
+        <Button
+            android:id="@+id/Input_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e4e4e4"
+            android:text="등록"/>
+
+    </LinearLayout>
+
+</LinearLayout>

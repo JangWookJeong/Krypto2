@@ -10,15 +10,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+
 /*
     부분화면을 만들어서 저장
 */
 public class Main_Total_List_items extends LinearLayout {
     private CircleImageView List_Profile_Image;
     private int getProfile_Image_Url;
-    private String List_Item_Name,List_Item_Date,List_item_Depoit,List_Item_PersonerTotal_Money;
-    private TextView List_Item_Name1,List_Item_Date1,List_item_Depoit1,List_Item_PersonerTotal_Money1;
-    String isWithdraw = "입 금";
+    private String List_Item_Name, List_Item_Date, List_item_Depoit, List_Item_PersonerTotal_Money;
+    private TextView List_Item_Name1, List_Item_Date1, List_item_Depoit1, List_Item_PersonerTotal_Money1;
+    String isWithdraw = "입금";
+
     public Main_Total_List_items(Context context) {
         super(context);
 
@@ -31,8 +33,8 @@ public class Main_Total_List_items extends LinearLayout {
     }
 
     private void init(Context context) {
-        LayoutInflater inflater = (LayoutInflater)context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        inflater.inflate(R.layout.total_list_items,this,true);
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+        inflater.inflate(R.layout.total_list_items, this, true);
 
         List_Item_Name1 = findViewById(R.id.List_Item_Name);
         List_Item_Date1 = findViewById(R.id.List_Item_Date);
@@ -60,11 +62,11 @@ public class Main_Total_List_items extends LinearLayout {
 
     public void setList_item_Depoit(String list_item_Depoit) {
 
-        List_item_Depoit1.setText(isWithdraw+" :"+list_item_Depoit);
+        List_item_Depoit1.setText(isWithdraw + " :" + list_item_Depoit);
 
     }
 
     public void setList_Item_PersonerTotal_Money(String list_Item_PersonerTotal_Money) {
-        List_Item_PersonerTotal_Money1.setText("잔 액 :"+list_Item_PersonerTotal_Money);
+        List_Item_PersonerTotal_Money1.setText("잔 액 :" + list_Item_PersonerTotal_Money);
     }
 }
